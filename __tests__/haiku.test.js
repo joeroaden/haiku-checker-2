@@ -18,8 +18,14 @@ describe('Haiku', () => {
     const notHaiku = new Haiku("An ocean voyage", "As waves break over the bow", "");
     expect(notHaiku.lineChecker()).toEqual("This is not a haiku");
   });
+
+  test('It should determine if there are any integers in Haiku object', () => {
+    const notHaiku = new Haiku("An ocean voyage", "As waves break over the bow", 98);
+    expect(notHaiku.lineChecker()).toEqual("No numbers allowed");
+  });
+
   test('it should determine if the presence of vowels', () => {
-    const newHaiku = new Haiku("An ocean voyage", "As waves break over the bow", "");
+    const newHaiku = new Haiku("qwrt", "qwrt", "qwrt");
     expect(newHaiku.vowelChecker()).toEqual(true);
   });
 });
