@@ -1,4 +1,5 @@
 export class Haiku {
-  constructor() {
+  constructor(passage) {
+    this.passage = passage;
   }
 }
