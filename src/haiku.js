@@ -5,6 +5,9 @@ export class Haiku {
     this.line3 = line3;
   }
   lineChecker() {
+    if ((this.line1 === "") || (this.line2 === "") || (this.line3 === "")) {
+      return "This is not a haiku";
+    }
 
   }
 }

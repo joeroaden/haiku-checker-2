@@ -15,7 +15,7 @@ describe('Haiku', () => {
   });
 
   test('It should determine if there are 3 lines in the Haiku object', () => {
-    const notHaiku = new Haiku("An ocean voyage", "As waves break over the bow", " ");
+    const notHaiku = new Haiku("An ocean voyage", "As waves break over the bow", "");
     expect(notHaiku.lineChecker()).toEqual("This is not a haiku");
   });
 });
